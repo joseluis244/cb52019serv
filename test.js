@@ -15,6 +15,7 @@ async function inicio(){
     let presencia = [0,0,0,0]
     let tipos = [0,0,0,0,0,0,0,0]
     let coolers = new Array(listacoolers.length).fill(0);
+    
     let visibility = new Array(listavisibility.length).fill(0);
     let moda = [[],[],[],[],[]]
     let moda_cantidad = [0,0,0,0,0]
