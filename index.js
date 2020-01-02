@@ -122,6 +122,8 @@ app.post('/app/encuesta',async (req,res)=>{
         ultima_visita:req.body.fecha
     }
     console.log(Ndb)
+    let DOC = await clientes.findOne({_id:req.body.id})
+    console.log(DOC)
     await clientes.updateOne({_id:req.body.id},Ndb)
     await clientes.save()
     let vitacora = {
