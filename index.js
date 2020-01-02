@@ -123,7 +123,6 @@ app.post('/app/encuesta',async (req,res)=>{
     }
     console.log(Ndb)
     await clientes.updateOne({_id:req.body.id},{$set:Ndb})
-    await clientes.save()
     let vitacora = {
         GPS:req.body.GPS,
         fecha:req.body.fecha,
