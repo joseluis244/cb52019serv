@@ -121,6 +121,7 @@ app.post('/app/encuesta',async (req,res)=>{
         frio:req.body.frio,
         ultima_visita:req.body.fecha
     }
+    console.log(Ndb)
     await clientes.updateOne({_id:req.body.id},Ndb)
     let vitacora = {
         GPS:req.body.GPS,
