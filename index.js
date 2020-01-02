@@ -105,6 +105,7 @@ app.post('/app/cliente',(req,res)=>{
 })
 
 app.post('/app/encuesta',async (req,res)=>{
+    console.log(req.body.id)
     console.log('guardando '+new Date())
     let Ndb = {
         "materiales.0.L_material":req.body.coolers,
